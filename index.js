@@ -80,8 +80,8 @@ Do the following:
  3. Return the newly calculated age
 */
 
-function dogYears(humanYears){
-return humanYears * 7
+function dogYears(age){
+return age * 7
 }
 
 console.log('task2', dogYears(3));
@@ -272,7 +272,7 @@ Using the vowelCounter function below do the following:
 HINT - you may need to study tomorrow's content on arrays 
 HINT - try looking up the .includes() method
 */
-const vowels = ['a','e','i','o', 'u'];
+const vowels = ['a','e','i','o','u'];
 
 function vowelCounter(string) {
 let count = 0;
@@ -280,10 +280,11 @@ for (let letter of string.toLowerCase()){
   if (vowels.includes(letter)){
     count++;
   }
+}
   return count
 }
-}
-console.log (vowelCounter('My name is Sharon Sanchez'));
+
+console.log (vowelCounter('learning JavaScript is fun'));
 
 
 
